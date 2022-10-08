@@ -20,6 +20,23 @@ header {
 .navigation {
     background #333;
     color: #ffffff;
+
+}
+.container{
+    width: 1200 px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.header-stile {
+    display: flex;
+}
+.header-contact{
+    display: flex;
+    
+}
+.conteiner-nav {
+    display: flex;
+    margin-right: 100px;
 }
 
 .logo-header {
@@ -34,6 +51,7 @@ header {
 }
 
 .carent-link {
+    display: block;
     color: var(--color-brand);
     text-decoration: none;
     font-size: 14px;
@@ -64,6 +82,7 @@ header {
 }
 
 .link-header {
+    display: block;
     color: var(--color-background);
     text-decoration: none;
     font-size: 14px;
