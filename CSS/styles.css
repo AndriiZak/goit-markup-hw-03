@@ -9,37 +9,62 @@ header {
     color: #ECECEC;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .web {
     color: var(--color-brand);
 }
 
+.section {
+    padding: 94px 0 94px 0;
+}
 .studio {
     color: #000000;
 }
 
 .navigation {
-    background #333;
+    display: block
+    background-collor: #333;
     color: #ffffff;
 
 }
 .container{
-    width: 1200 px;
-    margin-left: 15px;
-    margin-right: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 .header-stile {
+    gap: 93px;
     display: flex;
+    align-items: center;
 }
 .header-contact{
     display: flex;
+    gap: 40px;
     
 }
-.conteiner-nav {
+.header-nav {
     display: flex;
-    margin-right: 100px;
+    gap: 50px;
 }
 
+.conteiner-nav {
+    display: block;
+    padding: 32px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .logo-header {
+    display:inline-block ;
+
     color: var(--color-section);
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -51,7 +76,6 @@ header {
 }
 
 .carent-link {
-    display: block;
     color: var(--color-brand);
     text-decoration: none;
     font-size: 14px;
@@ -82,7 +106,7 @@ header {
 }
 
 .link-header {
-    display: block;
+
     color: var(--color-background);
     text-decoration: none;
     font-size: 14px;
@@ -90,11 +114,24 @@ header {
     font-family: inherit;
     font-weight: 500;
     letter-spacing: 0.02em;
+
 }
 
 /* Main */
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
 body {
@@ -107,25 +144,49 @@ footer {
 }
 
 .hero {
+    padding: 200px 452px;
+
     background-color: var(--color-background);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ 
 }
 
 .hero-header {
+    width: 100%;
+    width: 696px;
+    height: 120px;
+    margin-bottom: 30px;
+ 
+
     color: var(--color-section);
     font-size: 44px;
     line-height: 1.36;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     font-weight: 900;
+    
+}
+.our-advantages-list {
+display: flex;
+padding-left: 0;
+gap: 30px;
 }
 
+
 .link-hero-button {
+    padding: 10px 32px;
+
     color: var(--color-section);
     background-color: var(--color-brand);
     cursor: pointer;
     font-size: 16px;
     line-height: 1.87;
     font-family: inherit;
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
 
 }
 .link-hero-button:hover, 
@@ -138,6 +199,10 @@ footer {
     font-family: inherit;
 }
 .our-advantages-title {
+    text-align: center;
+    margin-bottom: 50px;
+
+
     font-size: 36px;
     line-height: 1.16
 }
@@ -153,11 +218,30 @@ footer {
     
 }
 
+/* .what-do{
+    padding: 0 0 94 0;
+} */
+
 .what-do-title{
+    text-align: center;
+    margin-bottom: 50px;
+
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.06em;
     
+}
+
+.whot-do-style {
+display: flex;
+gap: 30px;
+}
+
+.our-workers{
+    display: flex;
+    text-align: center;
+    gap: 30px;
+
 }
 
 .our-team {
@@ -165,7 +249,15 @@ footer {
 
 }
 
+.container-oll-team{
+margin-top: 94px;
+margin-bottom: 94px;
+}
+
 .our-team-title {
+    text-align: center;
+    margin-bottom: 50px;
+
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
@@ -181,20 +273,8 @@ footer {
     font-weight: 500;
     letter-spacing: 0.03em;
 }
-.our-workers-first {
-    background-color: var(--color-section);
-}
-
-.our-workers-second {
-    background-color: var(--color-section);
-
-}
-
-.our-workers-third {
-    background-color: var(--color-section);
-}
-
-.our-workers-fourth {
+.our-workers-oll{
+  
     background-color: var(--color-section);
 }
 
@@ -244,7 +324,16 @@ footer {
 .studio-white {
     color: var(--color-section);
 }
+.adress-list {
+    padding: 20px 0 0 0;
+}
 
+.container-address{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 15px;
+}
 /* PORTFOLIO */
 /* main */
 .visually-hidden {
@@ -261,6 +350,8 @@ footer {
 }
 
 .link-oll {
+    padding: 6px 25px;
+
     background-color: var(--color-brand);
     color: var(--color-section);
     font-size: 16px;
@@ -274,14 +365,18 @@ footer {
     background-color: var(--color-brand);
     color: var(--color-section);
     font-size: 16px;
-        line-height: 1.62;
+    line-height: 1.62;
     font-weight: 500;
     letter-spacing: 0.03em;
     font-family: inherit;
     cursor: pointer;
 }
 
+
 .link-button {
+    display: flex;
+    padding: 6px 25px;
+
     font-size: 16px;
     line-height: 1.62;
     background-color: #F5F4FA;
@@ -303,6 +398,9 @@ footer {
 }
 
 .oll-product-subtitle {
+    margin-top: 20px;
+    margin-bottom: 4px;
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -324,9 +422,51 @@ footer {
 
 }
 .oll-product-link{
+
     color: var(--color-background);
     font-size: 16px;
     line-height: 1.87;
     font-family: inherit;
    text-decoration: none;
+}
+
+.button-portfolio {
+    display: flex;
+}
+
+.oll-product-list {
+
+    display: block;
+
+}
+
+.list{
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.list:nth-child(3n) {
+    margin-right: 0;
+}
+
+.oll-product-list:nth-last-child(-n+3){
+    margin-bottom: 0;
+}
+
+.oll-product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.oll-product:nth-child (2n+1) {
+    gap: 40px 
+    color: var(--color-background);
+}
+
+.link-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+
 }
