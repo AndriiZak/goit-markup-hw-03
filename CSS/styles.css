@@ -210,6 +210,8 @@ gap: 30px;
     line-height: 1.16
 }
 .our-advantages-subtitle {
+    padding-bottom: 10px;
+    text-transform: uppercase;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -266,18 +268,24 @@ margin-bottom: 94px;
     letter-spacing: 0.03em;
 }
 .our-workers-text {
+    padding-bottom: 30px;
+
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
 }
 .our-workers-subtitle{
+    padding-top: 30px;
+    padding-bottom: 10px;
+
     font-size: 16px;
     line-height: 1.18;
     font-weight: 500;
     letter-spacing: 0.03em;
 }
 .our-workers-oll{
-  
+    
+    
     background-color: var(--color-section);
 }
 
