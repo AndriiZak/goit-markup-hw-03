@@ -283,6 +283,7 @@ footer {
 }
 
 .our-team {
+    padding: 30px 0;
     background-color: #F5F4FA;
 
 }
@@ -298,7 +299,7 @@ footer {
 }
 
 .our-workers-oll-text {
-    padding: 30px 0;
+padding: 30px 0;
     background-color: var(--color-section);
 }
 
